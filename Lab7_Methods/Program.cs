@@ -12,21 +12,21 @@ namespace Lab7_Methods
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите целое число больше нуля ");
-            int a = Convert.ToInt32(Console.ReadLine());
-            float S, V;
+            Console.WriteLine("Введите длину ребра куба");
+            double a = Convert.ToDouble(Console.ReadLine());
+            double S, V;
             CountCubeVolume_Square(a, out S, out V);
-            Console.WriteLine(S);
-            Console.WriteLine(V);
+            Console.WriteLine("Площадь поверхности куба равна: {0}", S);
+            Console.WriteLine("Обьем куба равен: {0}", V);
             Console.ReadKey();
         }
-       
-        static int CountCubeVolume_Square(float a, out float S, out float V)
+
+        static void CountCubeVolume_Square(double a, out double S, out double V)
         {
 
             V = a * a * a;
             S = 6 * a * a;
-            return S,V;
+
         }
     }
 }
