@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cube", "Lab7_Methods\Cube.csproj", "{BCA77A67-77CA-4184-A57D-0A8FEC05254A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triangle", "ConsoleApp1\Triangle.csproj", "{01CEE111-13A4-4C2E-B555-E860E1BEA2A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCA77A67-77CA-4184-A57D-0A8FEC05254A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA77A67-77CA-4184-A57D-0A8FEC05254A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA77A67-77CA-4184-A57D-0A8FEC05254A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA77A67-77CA-4184-A57D-0A8FEC05254A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01CEE111-13A4-4C2E-B555-E860E1BEA2A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01CEE111-13A4-4C2E-B555-E860E1BEA2A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01CEE111-13A4-4C2E-B555-E860E1BEA2A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01CEE111-13A4-4C2E-B555-E860E1BEA2A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF234CAA-55A0-4AD5-A781-1AB68EB20307}
+	EndGlobalSection
+EndGlobal
