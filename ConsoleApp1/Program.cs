@@ -3,13 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/*Два треугольника заданы длинами своих сторон. Определить, площадь какого из них больше
+ * (создать метод для вычисления  площади  треугольника по длинам его сторон). 
+ * Для решения задачи можно использовать формулу Герона*/
 namespace ConsoleApp1
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Введите длины сторон треугольника 1");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите длины сторон треугольника 2");
+            double a = Convert.ToDouble(Console.ReadLine());
             int x1 = -1, y1 = 1;
             int x2 = 11, y2 = 5;
             int x3 = 0, y3 = 20;
