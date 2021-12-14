@@ -12,26 +12,32 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите длины сторон треугольника 1");
+            Console.WriteLine("Введите длины сторон треугольника №1 ");
             double a = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Введите длины сторон треугольника 2");
-            double a = Convert.ToDouble(Console.ReadLine());
-            int x1 = -1, y1 = 1;
-            int x2 = 11, y2 = 5;
-            int x3 = 0, y3 = 20;
-            double firstSide = Math.Sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
-            double secondSide = Math.Sqrt((x3 - x2) * (x3 - x2) + (y3 - y2) * (y3 - y2));
-            double thirdSide = Math.Sqrt((x3 - x1) * (x3 - x1) + (y3 - y1) * (y3 - y1));
-            double p = (firstSide + secondSide + thirdSide) / 2;
-            double Square = Math.Sqrt(p * (p - firstSide) * (p - secondSide) * (p - thirdSide));
-            double Perimeter = firstSide + secondSide + thirdSide;
+            double b = Convert.ToDouble(Console.ReadLine());
+            double c = Convert.ToDouble(Console.ReadLine());
+
+            double Square1 = TriangleSquare(a, b, c);
+
+            Console.WriteLine("Введите длины сторон треугольника №2");
+            double a2 = Convert.ToDouble(Console.ReadLine());
+            double b2 = Convert.ToDouble(Console.ReadLine());
+            double c2 = Convert.ToDouble(Console.ReadLine());
+            double Square2 = TriangleSquare(a2, b2, c2);
 
 
-
-            Console.WriteLine("Периметр прямоугольника равен: " + Perimeter);
-            Console.WriteLine("Плошадь прямоугольника равна: " + Square);
-            Console.WriteLine("Стороны {0}\t{1}\t{2}", +firstSide, +secondSide, +thirdSide);
+            Console.WriteLine("Площадь треугольника №1 равна: {0:0.00}", Square1);
+            Console.WriteLine("Площадь треугольника №2 равна: {0:N2}", Square2);
+            if (Square1 > Square2) Console.WriteLine("Площадь треугольника №1 больше");
+            if (Square2 > Square1) Console.WriteLine("Площадь треугольника №2 больше");
             Console.ReadKey();
+        }
+        static double TriangleSquare(double a, double b, double c)
+        {
+
+            double p = (a + b + c) / 2;
+            double Square = Math.Sqrt(p * (p - a) * (p - b) * (p - c));
+            return Square;
         }
 
     }
